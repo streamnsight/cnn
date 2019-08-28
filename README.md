@@ -12,4 +12,6 @@ docker build -t cnn .
 Run the docker image to get the installed environment, mounting the local dir as a volume so changes are persisted
 ```
 docker run -it -p 8888:8888 -v $(pwd):/notebooks cnn
-```
+``` 
+
+Click the link showed in the logs to open the notebook web UI.
