@@ -1,5 +1,7 @@
 FROM python:3.7
 
+RUN apt-get update \
+    && apt-get install python3-opencv -y
 ADD requirements.txt /
 RUN pip install -r requirements.txt
 
